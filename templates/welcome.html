@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<style>
+.mySlides {display:none;}
+</style>
+
+<body>
+<div class="container-fluid">
+<div class="w3-content w3-section" style="display: flex; justify-content: center;max-width:650px">
+
+	<a href="{{ url_for('welcome') }}" ><img class="mySlides" src="{{ url_for('static', filename='images/mb_welcome_650.jpg') }}" style="width:100%; margin-top:10px;"></a>
+	
+	<a href="{{ url_for('movie_selections') }}"><img class="mySlides" src="{{ url_for('static', filename='images/mb_movie_650.jpg') }}" style="width:100%; margin-top:10px;"></a> 
+
+</div>
+<br>
+
+<div style="display: flex; justify-content: center;">
+			<p><h3 style='color: #004080;'>Welcome to Miki Bahng's Website!</h3></p>
+			</div>	
+<div style="display: flex; justify-content: center;">
+	<p style='color: #313133;'></p>
+	<p style='color: #313133;'>
+		This webpage is for test-run purpose only. 
+		Please visit the actual website <a href="https://mikibahng.com" target="_blank">https://mikibahng.com</a> to check out Miki’s Resume and her Machine Learning Projects using Python, SAS or R, such as Python Web Apps for Handwritten Digit/Pattern Recognition, Movie Recommendation, Sentiment Analysis, Stock Price Prediction, US COVID-19 Map Update, etc., and more </p>
+</div>		
+<br>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change images every 2 seconds
+}
+</script>
+
+</body>
+	
+{% endblock %}

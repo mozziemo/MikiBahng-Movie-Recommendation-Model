@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block body %}
+<body>
+<div class="container-fluid">
+	<p>
+	<h3>Top Ten Movie Recommenations for You based on your input</h3></p>
+	<p>
+	<div class="page">
+	 {{ recommended_movies | safe }}
+	</div>
+	</p>
+	
+     <br>
+	<h4><p>Fun? <a href = "{{ url_for('movie_selections') }}"> <u>Click here to get <em>Personalized</em> Movie Recommendations, again!</u></a></p></h4>
+    <br><br> 
+</div>
+</body>
+	
+{% endblock %}

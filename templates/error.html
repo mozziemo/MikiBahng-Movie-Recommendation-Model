@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<body>
+<div class="container-fluid">
+	<div><img style="max-width:100px; margin: 40px;" src="{{ url_for('static', filename='images/penguin_tux.png') }}">
+    <p style="color:orange"><h3>Woops! Something went wrong</h3></p>
+    <p>The website is down for the moment.....</p>
+    <p>Please visit the site later.</p>
+</div>
+	<br><br><br>
+	<br><br>
+</div>	
+</body>
+
+{% endblock %}

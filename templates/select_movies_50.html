@@ -1,0 +1,287 @@
+{% extends "base.html" %}
+{% block body %}
+<body>
+<div class="container-fluid">
+	<p><h3>Select your Favorite Movies from the List for Movie Recommendations<sup>*</sup></h3>
+	
+	<p>(Please pick four or more movies that you'd give top ratings if you'd like to get <i>personalized</i> recommendations)</p> 
+	
+	</p>
+	
+<form method = "post" action="/movie-recommendations">
+		<div class="form-group">
+			<div>
+	
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="1">Toy Story (1995)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="50">Usual Suspects, The (1995)
+					</label>
+				
+			
+							<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="296">Pulp Fiction (1994)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="318">Shawshank Redemption, The (1994)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="356">Forrest Gump (1994)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="364">Lion King, The (1994)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="593">Silence of the Lambs, The (1991)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="595">Beauty and the Beast (1991)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="924">2001: A Space Odyssey (1968)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="1035">Sound of Music, The (1965)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="1222">Full Metal Jacket (1987)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="1265">Groundhog Day (1993)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="1266">Unforgiven (1992)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="1387">Jaws (1975)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="1682">Truman Show, The (1998)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="2324">Life Is Beautiful (1997)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="2571">Matrix, The (1999)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="2572">10 Things I Hate About You (1999)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="2716">Ghostbusters (a.k.a. Ghost Busters) (1984)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="2959">Fight Club (1999)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="3996">Crouching Tiger, Hidden Dragon (2000)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4226">Memento (2000)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4270">Mummy Returns, The (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4306">Shrek (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4308">Moulin Rouge (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4310">Pearl Harbor (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4459">Alaska: Spirit of the Wild (1997)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4816">Zoolander (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4823">Serendipity (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="4973">Amelie (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="5266">Panic Room (2002)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="5419">Scooby-Doo (2002)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="5618">Spirited Away (2001)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="5679">Ring, The (2002)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="5995">Pianist, The (2002)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="6377">Finding Nemo (2003)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="7361">Eternal Sunshine of the Spotless Mind (2004)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="8533">Notebook, The (2004)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="30816">Phantom of the Opera, The (2004)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="39183">Brokeback Mountain (2005)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="46578">Little Miss Sunshine (2006)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="54503">Superbad (2007)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="54997">3:10 to Yuma (2007)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="58559">Dark Knight, The (2008)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="68954">Up (2009)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="69757">(500) Days of Summer (2009)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="79132">Inception (2010)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="80463">Social Network, The (2010)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="89745">Avengers, The (2012)
+					</label>
+				
+			
+				<label class="checkboxes" style="width:450px;">
+					<input type="checkbox" name="check" id="checkBtn" value="99114">Django Unchained (2012)
+					</label>
+				
+
+		
+			</div>
+		
+		<div class="alert alert-info">
+		<strong>Four or More Movies Checked?</strong><br>
+		Click the Submit Button to get Movie Recommendations
+		</div>
+		<div style="margin-left:50px;">
+		<button type = "submit" class = "btn btn-success" >Submit</button>
+		</div>
+		</div>
+	</form>
+  
+  
+	<br><br><br>
+	
+	<p><sup>*</sup> This Movie Recommendations web App has been built using Python and Flask, by Miki Bahng. It is a Collaborative Filtering Recommender System using Singular Value Decomposition (SVD) Matrix Factorization method and MovieLens Latest Datasets (100,000 ratings over 9,000 movies by 700 users). </p>
+	<br><br>	      
+</div>
+</body>
+	
+{% endblock %}

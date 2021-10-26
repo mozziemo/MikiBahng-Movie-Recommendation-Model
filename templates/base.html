@@ -1,0 +1,115 @@
+<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+		<title>Miki Bahng's Website</title>
+	
+	<!-- Bootstrap core CSS -->
+		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		
+	<!-- font-awesome CSS	 -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-awesome.min.css') }}">
+	<!-- Add icon library 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	-->
+	
+
+</head>
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<a class="navbar-brand" href="/">
+			<img style="max-width:155px; margin-top: -2px;" src="{{ url_for('static', filename='images/miki_home_icon_40x155.png') }}">
+			</a>
+			</div>
+      
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+  
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+					<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></li>
+
+					
+					<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Python Web App Examples</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+
+
+						<a class="dropdown-item" href="{{ url_for('movie_selections') }}">Movie Recommendation App</a>
+
+					</div></li>
+										
+		
+				</ul>
+			</div>	
+		</div>
+		</nav>
+	</header>	
+    <!-- Custom styles for this template -->	
+		<link href="{{ url_for('static', filename='css/custom-template.css') }}" rel="stylesheet"> 
+ 
+   <div class="container-fluid"> 
+
+   <body>
+
+	{% block body %}
+
+	{% endblock %}
+
+	<a class="back-to-top" href="#"><i class="fa fa-arrow-circle-up"></i></a>
+
+	 
+	</body>
+	
+	<!-- js inclues -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		
+  </body>
+ </div> 
+ 
+
+ 
+<!--Footer-->
+<footer class="footer">
+<div class="container-fluid" style="background-color:#333333;color:#ffffff;">
+	<div >
+	<div class="row" style="margin-top:15px; margin-bottom:-10px">
+		
+		<!--Copyright-->
+		<div class="col-sm-8"><div class="container-fluid"><p class="navbar-text pull-left">
+		<p class="text-muted" style="margin-top:10px">© 2018-2021  MikiBahng.com All Rights Reserved</p>
+		</p></div></div>
+		<!--/.Copyright-->
+		
+		<!--Social buttons-->
+		<div class="col-sm-4"><div class="container-fluid"><p class="navbar-text pull-right"><div class="footer-nav">
+		<p class="text-muted" style="margin-top:10px">
+			<ul>
+			<li><a href="https://www.linkedin.com/in/mikibahng" class="fa fa-linkedin fa-lg" target="_blank"></a>
+			<li><a href="https://twitter.com/MikiBahng" class="fa fa-twitter fa-lg" target="_blank"></a>
+			<li><a href="https://github.com/mozziemo" class="fa fa-github fa-lg" target="_blank"></a>
+			</ul>
+		</p>
+		</div>
+		</p>
+		</div></div>
+		<!--Social buttons-->
+	</div>
+	</div>
+</div>
+</footer>
+<!--/.Footer-->	
+
+</html>
